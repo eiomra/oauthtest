@@ -1,0 +1,20 @@
+RewriteEngine On    
+
+# Redirect from post.php?id=3 to /post/3
+RewriteCond %{QUERY_STRING} ^id=([^&]+) [NC]
+RewriteRule ^post\.php$ /post/%1? [R=301,L]
+
+# Rewrite /post/3 to post.php?id=3
+RewriteRule ^post/([^/]+)/?$ post.php?id=$1 [L]
+
+
+# Add .php extension to files if they exist, except for post.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !^post\.php$ %{REQUEST_URI}.php [L]
+
+ 
+# Redirect to error.php when a page is not found
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ error.php [L]
