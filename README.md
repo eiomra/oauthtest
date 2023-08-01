@@ -4,6 +4,10 @@
 
 Using Oauth2.0 authorization protocol and authentication.
 
+To clone project use
+
+git clone https://github.com/tumazfresh/oauthtest.git
+
 To run this project on your machine, your server needs to be http://localhost:3000
 because the redirect uri is already preconfigured to that. 
 
