@@ -14,9 +14,3 @@ include __DIR__ . '/includes/dskp/newslet.php';
 include __DIR__ . '/includes/dskp/mobnewslet.php'; 
 include __DIR__ . '/includes/footer.php';  
 ?>
-
-
- 
-
-
-
