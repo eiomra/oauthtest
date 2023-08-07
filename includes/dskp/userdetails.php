@@ -8,6 +8,7 @@
       <div class="col">Email: <?php echo $userData['email']; ?></div>
       <div class="col">First Name: <?php echo $userData['first_name']; ?></div>
       <div class="col">Last Name: <?php echo $userData['last_name']; ?> </div>
+      <div class="col"> <p class="prbt"><a href="./logout" class="btn btn-outline-danger gbtnq">&nbsp;&nbsp;<i class="bi bi-arrow-return-right"></i> Logout &nbsp;&nbsp;</a></p></div>
           </div>
   </div></div> 
     </div>
